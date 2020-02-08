@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>Alternatív gyógyászat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+    function set_visible(id) {
+        document.getElementById('content1').style.display = 'none';
+        document.getElementById('content2').style.display = 'none';
+        document.getElementById('content3').style.display = 'none';
+        document.getElementById('content4').style.display = 'none';
+        document.getElementById('content5').style.display = 'none';
+        document.getElementById(id).style.display='block';
+    }
+    </script>
+    <style>
+    div{
+        display: none;
+    }
+    h1{
+          font-size: 36px;
+          color: #004000;
+          margin: 35px;
+    }
+    h2{
+          font-size: 30px;
+          color: #004000;
+          margin: 15px;
+    }
+    p{
+          font-size: 24px;
+          color: #008000;
+          margin: 4px;
+    }
+    .button{
+          display:inline-block;
+          font-size: 24px;
+          font-weight: 900;
+          color: #ffffff;
+          border: 4px solid #a05020;
+          border-radius: 12px;
+          padding: 16px;
+          background: url('button.jpg') no-repeat;
+          background-size:cover;
+          cursor:grab;
+          margin: 16px;
+    }
+    .button:hover{
+          color: #ffff80;
+    }
+    .mainwindow{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+        position: relative;
+        padding: 24px;
+        opacity: 0.85;
+        background: url('bg.jpg') no-repeat;
+        background-size:cover;
+        border-radius: 18px;
+    }
+    .subwindow{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        background-color: #fed;
+        position: relative;
+        padding: 24px;
+        background-size:cover;
+        border-radius: 18px;
+    }
+    </style>
+</head>
+<body background="bgmain.jpg">
+<div class="mainwindow">
+<center>
+<p class="button" onclick="set_visible('content1')">Magneter</p>
+<p class="button" onclick="set_visible('content2')">Psychés problémák</p>
+<p class="button" onclick="set_visible('content3')">Rákkezelés</p>
+<p class="button" onclick="set_visible('content4')">Állapotfelmérés</p>
+<p class="button" onclick="set_visible('content5')">Kapcsolat</p></center>
+<div class="subwindow">
+<div id="content1">
+  <h1>Magneter</h1>
+  <p>- Biorezonanciás, mágnesterápia</p>
+  <p>- Gépi kezelés</p>
+  <p>- Hatékony és mellékhatás illetve fájdalommentes terápia</p>
+  <p></p>
+  <p>Ez jelenleg az egyetlen olyan Szlovákiában, mely rendelkezik hivatalos engedéllyel az Egészségügyi minisztérium által. Szinte bármilyen betegség esetén nagyon nagyfokú eredménnyel alkalmazható, akár önálló terápiás eljárásként is.
+  Más kiegészítő kezelési mód vagy más terápiás eljárásokkal együtt is használható, pl. kemoterápia vagy vitaminterápia.</p>
+</div>
+
+<div id="content2">
+  <h1>Psychés problémák kezelése</h1>
+  <p>- Különböző típusú metódusok kombinált alkalmazása homeopátria</p>
+  <p>- Psychoterápiás konzultáció tanácsadás (légzéstechnika, jóga)</p>
+  <p>- Gépi kezelés</p>
+  <p>- Motivációs tréning / új módszerek alkalmazása</p>
+</div>
+    
+<div id="content3">
+  <h1>Hatékony rákkezelés mellékhatások nélkül</h1>
+  <h2>pl. kemo, sugárterápia</h2>
+  <p>A rák nem egy csodabetegség. A kialakulásának rövid, de lényegretörő magyarázata és ami a lényeg IGEN HATÉKONY GYÓGYMÓDJA ez természetes módszerekkel.</p>
+</div>
+
+<div id="content4">
+  <h1>Állapotfelmérés Gnld vizeletteszt alapján</h1>
+  <p>- Vitaminok szintje, máj, vese funkciójának állapotfelmérése</p>
+  <p>- A test savasságának kiértékelése</p>
+  <p>- Fehérje, cukor jelenlétének meghatározása</p>
+</div>
+
+<div id="content5">
+  <h1>Kapcsolat</h1>
+
+  <h2>Rendelés</h2>
+  <p>Komárno Rákóczi patika 2. emeletén</p>
+  <p>7,00 - 12,00</p>
+
+  <h2>További infó</h2>
+  <p>Tel.: 0905 880 237</p>
+  <p>Dr. Baštrnák András</p>
+</div>
+</div>
+</div>
+</body>
